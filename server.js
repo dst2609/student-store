@@ -2,8 +2,6 @@ require("dotenv").config(); // Load environment variables from .env file
 const cors = require("cors");
 const express = require("express");
 const morgan = require("morgan");
-// const routes = require("./routes/routes");
-// const { setupSecurity } = require("./security/security");
 
 const app = express();
 
@@ -28,8 +26,6 @@ app.get("/", (req, res) => {
 
 // Routes setup
 // routes(app);
-
-// Connect to MongoDB
 
 // Start the server
 app.listen(3000, () => {
